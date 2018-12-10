@@ -6,21 +6,36 @@ import { styles } from '../res/styles.js'
 
 export default class ProfileScreen extends Component {
 
-  handleSignOut = () => {
-    firebase.auth().signOut()
+  constructor() {
+    super();
+    this.state = {
+      loading: false,
+      displayName:''
+    }
+  }
+
+  componentWillMount(){
+    this.setState({ displayName: firebase.auth().currentUser.displayName})
+  }
+
+  handleSignOutAsync = async () => {
+    this.setState({ loading: true })
+    await firebase.auth().signOut()
+    this.setState({ loading: false });
     this.props.navigation.navigate('Auth')
   }
 
   render() {
     return (
       <View style={styles.container}>
-        <Text style={styles.welcomeTextStyle}>Hi {firebase.auth().currentUser.displayName} </Text>
+        <Text style={styles.welcomeTextStyle}>Hi {this.state.displayName} </Text>
         <Button
-            style={styles.buttonStyle}
-            mode='contained'
-            onPress={() => this.handleSignOut()}
-            color='#008080'>
-            Sign out
+          style={styles.buttonStyle}
+          mode='contained'
+          onPress={() => this.handleSignOutAsync()}
+          color='#008080'
+          loading={this.state.loading}>
+          Sign out
           </Button>
       </View>
     );

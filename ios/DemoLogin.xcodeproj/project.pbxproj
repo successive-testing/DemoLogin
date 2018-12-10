@@ -16,6 +16,7 @@
 		0540A349E5C04503819E412F /* SimpleLineIcons.ttf in Resources */ = {isa = PBXBuildFile; fileRef = D606865A7FD94168BA81DC72 /* SimpleLineIcons.ttf */; };
 		0D468DD6A8D44BCD916EB4EB /* FontAwesome.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 9138820E3F894068AC7EAC87 /* FontAwesome.ttf */; };
 		11D1A2F320CAFA9E000508D9 /* libRCTAnimation.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 5E9157331DD0AC6500FF2AA8 /* libRCTAnimation.a */; };
+		12324947CFEEB5AB19620F53 /* libPods-DemoLogin.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D8AE4F9EB81FB56C560CD759 /* libPods-DemoLogin.a */; };
 		133E29F31AD74F7200F7D852 /* libRCTLinking.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 78C398B91ACF4ADC00677621 /* libRCTLinking.a */; };
 		139105C61AF99C1200B5F7CC /* libRCTSettings.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 139105C11AF99BAD00B5F7CC /* libRCTSettings.a */; };
 		139FDEF61B0652A700C62182 /* libRCTWebSocket.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 139FDEF41B06529B00C62182 /* libRCTWebSocket.a */; };
@@ -43,6 +44,7 @@
 		473B562C66734AA381980BF6 /* Octicons.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 9615F09170DB4D9393EF0A6F /* Octicons.ttf */; };
 		48CF1C1B69674C2F80559AA8 /* Zocial.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 3933B6A6B25F402B90126AEA /* Zocial.ttf */; };
 		59DAEA9873DF43209FD30D52 /* FontAwesome5_Brands.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 8B0B7935AE294F1F8D244639 /* FontAwesome5_Brands.ttf */; };
+		5C2EE12521BEA4E9002BA324 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 5C2EE0FB21BEA4E9002BA324 /* GoogleService-Info.plist */; };
 		6E730C009EA84ED895431717 /* AntDesign.ttf in Resources */ = {isa = PBXBuildFile; fileRef = F1302466CFE742A0935EC3B7 /* AntDesign.ttf */; };
 		801DFF70D7EB4FD0A3D4A0C5 /* libRNFirebase.a in Frameworks */ = {isa = PBXBuildFile; fileRef = F84A4E9EA22E49468BB6BBD7 /* libRNFirebase.a */; };
 		832341BD1AAA6AB300B99B32 /* libRCTText.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 832341B51AAA6A8300B99B32 /* libRCTText.a */; };
@@ -393,6 +395,8 @@
 		3933B6A6B25F402B90126AEA /* Zocial.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = Zocial.ttf; path = "../node_modules/react-native-vector-icons/Fonts/Zocial.ttf"; sourceTree = "<group>"; };
 		435D4E73BCD043738F5CC31D /* Foundation.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = Foundation.ttf; path = "../node_modules/react-native-vector-icons/Fonts/Foundation.ttf"; sourceTree = "<group>"; };
 		5A947682CF0B4B31B1B9A9AD /* Ionicons.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = Ionicons.ttf; path = "../node_modules/react-native-vector-icons/Fonts/Ionicons.ttf"; sourceTree = "<group>"; };
+		5BA98C50B1F3FF4D97B8FBC6 /* Pods-DemoLogin.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DemoLogin.debug.xcconfig"; path = "Pods/Target Support Files/Pods-DemoLogin/Pods-DemoLogin.debug.xcconfig"; sourceTree = "<group>"; };
+		5C2EE0FB21BEA4E9002BA324 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../Downloads/GoogleService-Info.plist"; sourceTree = "<group>"; };
 		5E91572D1DD0AC6500FF2AA8 /* RCTAnimation.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = RCTAnimation.xcodeproj; path = "../node_modules/react-native/Libraries/NativeAnimation/RCTAnimation.xcodeproj"; sourceTree = "<group>"; };
 		6195C3756DEF48EFBF9B90AF /* RNGestureHandler.xcodeproj */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = "wrapper.pb-project"; name = RNGestureHandler.xcodeproj; path = "../node_modules/react-native-gesture-handler/ios/RNGestureHandler.xcodeproj"; sourceTree = "<group>"; };
 		6891C4A8EF3D4413A7E610EE /* Feather.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = Feather.ttf; path = "../node_modules/react-native-vector-icons/Fonts/Feather.ttf"; sourceTree = "<group>"; };
@@ -406,7 +410,9 @@
 		AD6B774D39C54DB58290A209 /* RNFirebase.xcodeproj */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = "wrapper.pb-project"; name = RNFirebase.xcodeproj; path = "../node_modules/react-native-firebase/ios/RNFirebase.xcodeproj"; sourceTree = "<group>"; };
 		ADBDB91F1DFEBF0600ED6528 /* RCTBlob.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = RCTBlob.xcodeproj; path = "../node_modules/react-native/Libraries/Blob/RCTBlob.xcodeproj"; sourceTree = "<group>"; };
 		B42FC45D035F46168873DF5E /* MaterialCommunityIcons.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = MaterialCommunityIcons.ttf; path = "../node_modules/react-native-vector-icons/Fonts/MaterialCommunityIcons.ttf"; sourceTree = "<group>"; };
+		BE3CE6DE0F8E14A7E59FF38B /* Pods-DemoLogin.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DemoLogin.release.xcconfig"; path = "Pods/Target Support Files/Pods-DemoLogin/Pods-DemoLogin.release.xcconfig"; sourceTree = "<group>"; };
 		D606865A7FD94168BA81DC72 /* SimpleLineIcons.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = SimpleLineIcons.ttf; path = "../node_modules/react-native-vector-icons/Fonts/SimpleLineIcons.ttf"; sourceTree = "<group>"; };
+		D8AE4F9EB81FB56C560CD759 /* libPods-DemoLogin.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-DemoLogin.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		E587923A163F48F2A1B45A42 /* RNVectorIcons.xcodeproj */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = "wrapper.pb-project"; name = RNVectorIcons.xcodeproj; path = "../node_modules/react-native-vector-icons/RNVectorIcons.xcodeproj"; sourceTree = "<group>"; };
 		EA55FEC8D7D44066A6E45B64 /* libRNVectorIcons-tvOS.a */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = archive.ar; path = "libRNVectorIcons-tvOS.a"; sourceTree = "<group>"; };
 		EBE9506AE5FF449C99B4B0BE /* FontAwesome5_Solid.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = FontAwesome5_Solid.ttf; path = "../node_modules/react-native-vector-icons/Fonts/FontAwesome5_Solid.ttf"; sourceTree = "<group>"; };
@@ -442,6 +448,7 @@
 				801DFF70D7EB4FD0A3D4A0C5 /* libRNFirebase.a in Frameworks */,
 				8E1B4E66282C44EE96D74DFE /* libRNGestureHandler.a in Frameworks */,
 				2BFEDCC460C840CC92D0D4D4 /* libRNVectorIcons.a in Frameworks */,
+				12324947CFEEB5AB19620F53 /* libPods-DemoLogin.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -554,6 +561,7 @@
 		13B07FAE1A68108700A75B9A /* DemoLogin */ = {
 			isa = PBXGroup;
 			children = (
+				5C2EE0FB21BEA4E9002BA324 /* GoogleService-Info.plist */,
 				008F07F21AC5B25A0029DE68 /* main.jsbundle */,
 				13B07FAF1A68108700A75B9A /* AppDelegate.h */,
 				13B07FB01A68108700A75B9A /* AppDelegate.m */,
@@ -592,8 +600,18 @@
 			isa = PBXGroup;
 			children = (
 				2D16E6891FA4F8E400B85C8A /* libReact.a */,
+				D8AE4F9EB81FB56C560CD759 /* libPods-DemoLogin.a */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		3A5DB2E2EB0888D9136BF74F /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				5BA98C50B1F3FF4D97B8FBC6 /* Pods-DemoLogin.debug.xcconfig */,
+				BE3CE6DE0F8E14A7E59FF38B /* Pods-DemoLogin.release.xcconfig */,
+			);
+			name = Pods;
 			sourceTree = "<group>";
 		};
 		5C94EE7A21BE907C00A00862 /* Recovered References */ = {
@@ -691,6 +709,7 @@
 				2D16E6871FA4F8E400B85C8A /* Frameworks */,
 				FD1E06E6E6164A3E828F22DD /* Resources */,
 				5C94EE7A21BE907C00A00862 /* Recovered References */,
+				3A5DB2E2EB0888D9136BF74F /* Pods */,
 			);
 			indentWidth = 2;
 			sourceTree = "<group>";
@@ -764,10 +783,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 13B07F931A680F5B00A75B9A /* Build configuration list for PBXNativeTarget "DemoLogin" */;
 			buildPhases = (
+				5A5BEF2259B53B39413C3370 /* [CP] Check Pods Manifest.lock */,
 				13B07F871A680F5B00A75B9A /* Sources */,
 				13B07F8C1A680F5B00A75B9A /* Frameworks */,
 				13B07F8E1A680F5B00A75B9A /* Resources */,
 				00DD1BFF1BD5951E006B06BC /* Bundle React Native code and images */,
+				83BD3BEA534C6CE0CCFF0324 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -1234,6 +1255,7 @@
 				9CCDCF56F7FF4C349EC170C8 /* FontAwesome5_Regular.ttf in Resources */,
 				D7E7E842D34B4AF08F435551 /* FontAwesome5_Solid.ttf in Resources */,
 				9B8B012E64964A889AB54029 /* Foundation.ttf in Resources */,
+				5C2EE12521BEA4E9002BA324 /* GoogleService-Info.plist in Resources */,
 				AC00F1F9CD3446CBAA1451AD /* Ionicons.ttf in Resources */,
 				C0736B01C7FA49E3A05BE9D7 /* MaterialCommunityIcons.ttf in Resources */,
 				F17747DE64EA4F368E505C31 /* MaterialIcons.ttf in Resources */,
@@ -1288,6 +1310,46 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "export NODE_BINARY=node\n../node_modules/react-native/scripts/react-native-xcode.sh";
+		};
+		5A5BEF2259B53B39413C3370 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-DemoLogin-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		83BD3BEA534C6CE0CCFF0324 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-DemoLogin/Pods-DemoLogin-resources.sh",
+				"${PODS_CONFIGURATION_BUILD_DIR}/gRPC/gRPCCertificates.bundle",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/gRPCCertificates.bundle",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-DemoLogin/Pods-DemoLogin-resources.sh\"\n";
+			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
 
@@ -1421,6 +1483,7 @@
 		};
 		13B07F941A680F5B00A75B9A /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5BA98C50B1F3FF4D97B8FBC6 /* Pods-DemoLogin.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CURRENT_PROJECT_VERSION = 1;
@@ -1446,6 +1509,7 @@
 		};
 		13B07F951A680F5B00A75B9A /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = BE3CE6DE0F8E14A7E59FF38B /* Pods-DemoLogin.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CURRENT_PROJECT_VERSION = 1;
