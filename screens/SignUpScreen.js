@@ -25,9 +25,8 @@ export default class SignUpScreen extends Component {
     const { firstName, email, password } = this.state;
     this.setState({ loading: true })
 
-    var firstNameValidation =  Validation.firstNameValidation(firstName)
-    if(!firstNameValidation.isSuccessful)
-    {
+    var firstNameValidation = Validation.firstNameValidation(firstName)
+    if (!firstNameValidation.isSuccessful) {
       Alert.alert(
         strings.ErrorAlertHeader,
         firstNameValidation.message,
@@ -40,9 +39,8 @@ export default class SignUpScreen extends Component {
       return;
     }
 
-    var emailValidation =  Validation.emailValidation(email)
-    if(!emailValidation.isSuccessful)
-    {
+    var emailValidation = Validation.emailValidation(email)
+    if (!emailValidation.isSuccessful) {
       Alert.alert(
         strings.ErrorAlertHeader,
         emailValidation.message,
@@ -55,9 +53,8 @@ export default class SignUpScreen extends Component {
       return;
     }
 
-    var passwordValidation =  Validation.passwordValidation(password)
-    if(!passwordValidation.isSuccessful)
-    {
+    var passwordValidation = Validation.passwordValidation(password)
+    if (!passwordValidation.isSuccessful) {
       Alert.alert(
         strings.ErrorAlertHeader,
         passwordValidation.message,
@@ -92,7 +89,9 @@ export default class SignUpScreen extends Component {
             { cancelable: false }
           )
         )
-        .catch();
+          .catch(error => {
+            console.log(error);
+          });
       })
       .catch(error => {
         this.setState({ loading: false, errorMessage: error.message })
@@ -131,7 +130,7 @@ export default class SignUpScreen extends Component {
               <Icon style={styles.textInputIcon} name="person" size={20} color="#008080" />
               <TextInput
                 label='First name'
-                style={[styles.textInputStyle, { marginRight:5 }]}
+                style={[styles.textInputStyle, { marginRight: 5 }]}
                 onChangeText={(text) => this.setState({ firstName: text })}
                 value={this.state.firstName}
                 disabled={this.state.loading}
@@ -143,7 +142,7 @@ export default class SignUpScreen extends Component {
               />
               <TextInput
                 label='Last name'
-                style={[styles.textInputStyle, { marginLeft:5 }]}
+                style={[styles.textInputStyle, { marginLeft: 5 }]}
                 onChangeText={(text) => this.setState({ lastName: text })}
                 value={this.state.lastName}
                 disabled={this.state.loading}
@@ -168,7 +167,7 @@ export default class SignUpScreen extends Component {
                 returnKeyType='next'
                 onSubmitEditing={() => { this.passwordTextInput.focus(); }}
                 blurOnSubmit={false}
-                autoCapitalize = 'none'
+                autoCapitalize='none'
               />
             </View>
             <View style={styles.textInputContainer}>

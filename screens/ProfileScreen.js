@@ -10,12 +10,12 @@ export default class ProfileScreen extends Component {
     super();
     this.state = {
       loading: false,
-      displayName:''
+      displayName: ''
     }
   }
 
-  componentWillMount(){
-    this.setState({ displayName: firebase.auth().currentUser.displayName})
+  componentWillMount() {
+    this.setState({ displayName: firebase.auth().currentUser.displayName })
   }
 
   handleSignOutAsync = async () => {
